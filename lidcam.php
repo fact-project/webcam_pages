@@ -11,7 +11,7 @@ exec ("/usr/bin/ffmpeg \
 );
 
 $timestamp = exec('stat -c "%Y" lidcam.jpg');
-$date = exec('date +"%T %F" -d @'.$timestamp);
+$date = exec('date -u +"%Y-%m-%d %H:%M:%S" -d @'.$timestamp);
 exec ('/usr/bin/montage -pointsize 25 -font "Arial_Bold.ttf" -geometry +0+0 -background black -fill white -label "'.$date.'"  lidcam.jpg lidcam_with_date.jpg');
 header('Content-type: image/jpeg');
 readfile('./lidcam_with_date.jpg');
