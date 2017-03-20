@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<p><img src="./cam.php" width="640" height="500" alt="cam picture" /></p>
+<p><img src="./cam.php" width="640" alt="cam picture" /></p>
 <p><a href="ir/">Switch off/on IR lights</a></p>
 <p><a href="https://www.fact-project.org/logbook/showthread.php?tid=1755">info/howto</a></p>
 </body>
