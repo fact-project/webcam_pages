@@ -6,6 +6,7 @@ exec ("/usr/bin/ffmpeg \
     -i rtsp://10.0.100.87/live/h264 \
     -vframes 1 \
     -r 1 \
+    -y \
     lidcam.jpg"
 );
 

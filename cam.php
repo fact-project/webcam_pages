@@ -6,6 +6,7 @@ exec ("/usr/bin/ffmpeg \
     -i rtsp://10.0.100.85/live/h264 \
     -vframes 1 \
     -r 1 \
+    -y \
     ircam.jpg"
 );
 
